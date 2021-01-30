@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Полная информация о номере гостиницы для котов и кошек «Котейка»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="nav">
+      <a>
+        <img class="page-header__logo" src="img/logo.svg" width="63" height="52" alt="Логотип «Котейка»">
+      </a>
+      <ul>
+        <li class="nav__item"><a href="#">Почему мы?</a></li>
+        <li class="nav__item"><a href="#">Номера</a></li>
+        <li class="nav__item"><a href="#">Отзывы</a></li>
+        <li class="nav__item"><a href="#">Как нас найти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Карточка номера Супер-Люкс</h1>
+
+    <section class="card">
+      <h2>Супер-Люкс</h2>
+      <img src="img/photo-full.jpg" width="500" height="396" alt="Фото">
+      <ul class="card-photo-preview">
+        <li class="card-photo-preview-item">
+          <img src="img/photo-1.jpg" width="70" height="112" alt="Фото 1">
+        </li>
+        <li class="card-photo-preview-item">
+          <img src="img/photo-2.jpg" width="70" height="112" alt="Фото 2">
+        </li>
+        <li class="card-photo-preview-item">
+          <img src="img/photo-3.jpg" width="70" height="112" alt="Фото 3">
+        </li>
+      </ul>
+      <dl>
+        <dt>Размеры (ШхГхВ) - </dt>
+        <dd>180х160х180 см</dd>
+        <dt>Площадь - </dt>
+        <dd>2,88 м<sup>2</sup></dd>
+        <dt>Оснащение номера</dt>
+        <dd>
+          <ul class="equipment-list">
+            <li class="equipment-item-sofa">Лежак</li>
+            <li class="equipment-item-house">Домик</li>
+            <li class="equipment-item-toy">Игровой комплекс - 3 яруса</li>
+            <li class="equipment-item-cat-tree">Когтеточка</li>
+          </ul>
+        </dd>
+        <dt>Цена за сутки: </dt>
+        <dd>600 ₽</dd>
+      </dl>
+      <a href="#">Забронировать</a>
+    </section>
+
+    <section class="room-reservation">
+      <h2>Другие номера</h2>
+      <section class="room-reservation__description">
+        <h3>Комфорт</h3>
+        <dl>
+          <dt>Площадь — </dt>
+          <dd>1,13 м<sup>2</sup></dd>
+      
+          <dt>Размеры (ШхГхВ) —</dt>
+          <dd>100х125х180 см</dd>
+      
+          <dt>Цена за сутки: </dt>
+          <dd>250₽</dd>
+        </dl>
+        <img src="img/photo-order-2.jpg" width="600" height="400" alt="Номер Комфорт">
+      </section>
+      
+      <section class="room-reservation__form">
+        <h3>Забронировать номер</h3>
+        <form id="reservation-form" action="#" method="post">
+          <label for="reservation-form__name-field" class="visually-hidden">Ваше имя</label>
+          <input id="reservation-form__name-field" type="text" name="reservation-form__name" placeholder="Ваше имя">
+          <label for="reservation-form__pet-field" class="visually-hidden">Имя Питомца</label>
+          <input id="reservation-form__pet-field" type="text" name="reservation-form__pet" placeholder="Имя Питомца">
+          <label for="reservation-form__phone-field" class="visually-hidden">Телефон</label>
+          <input id="reservation-form__name-phone" type="tel" name="reservation-form__phone" placeholder="Телефон">
+          <label for="reservation-form__email-field" class="visually-hidden">E-mail</label>
+          <input id="reservation-form__email-field" type="email" name="reservation-form__email" placeholder="E-mail">
+      
+          <label for="reservation-form__begin-date-field">Дата заезда с </label>
+          <input id="reservation-form__begin-date-field" type="text" name="reservation-form__begin-date"
+            placeholder="26.01.2020">
+          <label for="reservation-form__end-date-field">по</label>
+          <input id="reservation-form__end-date-field" type="text" name="reservation-form__end-date" placeholder="26.02.2020">
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="contacts">
+      <h2>Как нас найти</h2>
+      <dl>
+        <dt>Адрес</dt>
+        <dd>Санкт-Петербург, ул Большая Конюшенная, д 19</dd>
+        <dt>Режим работы</dt>
+        <dd>Ежедневно, с 9:00 до 20:00</dd>
+        <dt>Телефон</dt>
+        <dd>
+          <a href="tel:88000000000">8 (800) 000-00-00</a>
+        </dd>
+        <dt>E-mail</dt>
+        <dd>
+          <a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+        </dd>
+        <dt>Социальные сети</dt>
+        <dd>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">ВКонтакте</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <img src="img/map.jpg" width="798" height="580" alt="Адрес гостиницы: Санкт-Петербург, ул Большая Конюшенная, д 19">
+    </section>
+  
+    <section class="page-footer__nav">
+      <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
+      <a>
+        <img class="page-footer__logo" src="img/logo.svg" width="63" height="52" alt="Логотип «Котейка»">
+      </a>
+      <ul>
+        <li class="nav__item"><a href="#">Почему мы?</a></li>
+        <li class="nav__item"><a href="#">Номера</a></li>
+        <li class="nav__item"><a href="#">Отзывы</a></li>
+        <li class="nav__item"><a href="#">Как нас найти</a></li>
+      </ul>
+      <p>
+        © 2019 Все права защищены
+      </p>
+      <a href="#">Политика конфиденциальности</a>
+    </section>
+  </footer>
+  
+</body>
+</html>

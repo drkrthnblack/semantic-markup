@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог гостиницы для котов и кошек «Котейка»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="nav">
+      <a href="index.html">
+        <img class="page-header__logo" src="img/logo.svg" width="63" height="52" alt="Логотип «Котейка»">
+      </a>
+      <ul>
+        <li class="nav__item"><a href="#">Почему мы?</a></li>
+        <li class="nav__item"><a href="#">Номера</a></li>
+        <li class="nav__item"><a href="#">Отзывы</a></li>
+        <li class="nav__item"><a href="#">Как нас найти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Наши номера</h1>
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтры</h2>
+      <form class="filters-form" action="#" method="GET">
+        <fieldset>
+          <legend>Цена за сутки, ₽</legend>
+          <label class="visually-hidden" for="filters-form-price-from-field">Цена за сутки,
+          от</label>
+          <input type="text" id="filters-form-price-from-field" name="filters-form-price-from" value="100" placeholder="от 100">
+          <label class="visually-hidden" for="filters-form-price-to-field">Цена за сутки,
+          до</label>
+          <input type="text" id="filters-form-price-to-field" name="filters-form-price-to" value="600" placeholder="до 600">
+        </fieldset>
+
+        <fieldset>
+          <legend>Площадь</legend>
+          <label><input type="checkbox" name="filters-form-area" value="0.63" checked>0,63 м2</label>
+          <label><input type="checkbox" name="filters-form-area" value="0.90" checked>0,90 м2</label>
+          <label><input type="checkbox" name="filters-form-area" value="1.13" checked>1,13 м2</label>
+          <label><input type="checkbox" name="filters-form-area" value="1.56" checked>1,56 м2</label>
+          <label><input type="checkbox" name="filters-form-area" value="2.56" checked>2,56 м2</label>
+          <label><input type="checkbox" name="filters-form-area" value="2.88" checked>2,88 м2</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Оснащение номера</legend>
+          <label><input type="checkbox" name="filters-form-equipment" value="empty" checked>Пустой номер</label>
+          <label><input type="checkbox" name="filters-form-equipment" value="sofa" checked>Лежак</label>
+          <label><input type="checkbox" name="filters-form-equipment" value="car-tree" checked>Когтеточка</label>
+          <label><input type="checkbox" name="filters-form-equipment" value="toy" checked>Игровой комплекс</label>
+          <label><input type="checkbox" name="filters-form-equipment" value="house" checked>Домик</label>
+        </fieldset>
+        <button type="reset">Сбросить фильтр</button>
+      </form>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог</h2>
+      <a href="sort-asc">По площади</a>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <h3>Эконом</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt><dd>90х70х180 см</dd>
+            <dt>Площадь — </dt><dd>0,63 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-empty">Пустой номер</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt><dd>100₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-2.jpg" width="270" height="185" alt="Эконом комната">
+          </dl>
+        </li>
+
+        <li class="catalog__item">
+          <h3>Эконом плюс</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt>
+            <dd>90х100х180 см</dd>
+            <dt>Площадь — </dt>
+            <dd>0,90 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-sofa">Лежак</li>
+                <li class="equipment-item-car-tree">Когтеточка</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt>
+            <dd>200₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-3.jpg" width="270" height="185" alt="Эконом-плюс комната">
+          </dl>
+        </li>
+
+        <li class="catalog__item">
+          <h3>Комфорт</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt>
+            <dd>100х125х180 см</dd>
+            <dt>Площадь — </dt>
+            <dd>1,13 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-sofa">Лежак</li>
+                <li class="equipment-item-car-tree">Когтеточка</li>
+                <li class="equipment-item-toy">Игровой-комплекс</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt>
+            <dd>250₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-6.jpg" width="270" height="185" alt="Комфорт комната">
+          </dl>
+        </li>
+
+        <li class="catalog__item">
+          <h3>Сьют</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt>
+            <dd>125х125х180 см</dd>
+            <dt>Площадь — </dt>
+            <dd>1,56 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-sofa">Лежак</li>
+                <li class="equipment-item-car-tree">Когтеточка</li>
+                <li class="equipment-item-toy">Игровой-комплекс</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt>
+            <dd>350₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-4.jpg" width="270" height="185" alt="Сьют комната">
+          </dl>
+        </li>
+
+        <li class="catalog__item">
+          <h3>Люкс</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt>
+            <dd>160х160х180 см</dd>
+            <dt>Площадь — </dt>
+            <dd>2,56 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-sofa">Лежак</li>
+                <li class="equipment-item-car-tree">Когтеточка</li>
+                <li class="equipment-item-toy">Игровой-комплекс</li>
+                <li class="equipment-item-house">Домик</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt>
+            <dd>500₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-1.jpg" width="270" height="185" alt="Люкс комната">
+          </dl>
+        </li>
+
+        <li class="catalog__item">
+          <h3>Супер-Люкс</h3>
+          <dl>
+            <dt>Размеры (ШхГхВ) —</dt><dd>180х160х180 см</dd>
+            <dt>Площадь — </dt><dd>2,88 м<sup>2</sup></dd>
+            <dt>Оснащение номера </dt>
+            <dd>
+              <ul>
+                <li class="equipment-item-sofa">Лежак</li>
+                <li class="equipment-item-car-tree">Когтеточка</li>
+                <li class="equipment-item-toy">Игровой-комплекс</li>
+                <li class="equipment-item-house">Домик</li>
+              </ul>
+            </dd>
+            <dt>Цена за сутки: </dt><dd>600₽</dd>
+            <a href="#">Забронировать</a>
+            <img src="img/photo-room-5.jpg" width="270" height="185" alt="Супер-Люкс комната">
+          </dl>
+        </li>
+      </ul>
+    </section>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Акции и предложения</h2>
+      <p>Каждый 7-й день <strong>бесплатно!</strong></p>
+      <p>Акция действует при размещении в номерах «Люкс» и «Супер-Люкс»</p>
+      <a href="#">Забронировать</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="contacts">
+      <h2>Как нас найти</h2>
+      <dl>
+        <dt>Адрес</dt>
+        <dd>Санкт-Петербург, ул Большая Конюшенная, д 19</dd>
+        <dt>Режим работы</dt>
+        <dd>Ежедневно, с 9:00 до 20:00</dd>
+        <dt>Телефон</dt>
+        <dd>
+          <a href="tel:88000000000">8 (800) 000-00-00</a>
+        </dd>
+        <dt>E-mail</dt>
+        <dd>
+          <a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+        </dd>
+        <dt>Социальные сети</dt>
+        <dd>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">ВКонтакте</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <img src="img/map.jpg" width="798" height="580" alt="Адрес гостиницы: Санкт-Петербург, ул Большая Конюшенная, д 19">
+    </section>
+  
+    <section class="page-footer__nav">
+      <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
+      <a href="index.html">
+        <img class="page-footer__logo" src="img/logo.svg" width="63" height="52" alt="Логотип «Котейка»">
+      </a>
+      <ul>
+        <li class="nav__item"><a href="#">Почему мы?</a></li>
+        <li class="nav__item"><a href="#">Номера</a></li>
+        <li class="nav__item"><a href="#">Отзывы</a></li>
+        <li class="nav__item"><a href="#">Как нас найти</a></li>
+      </ul>
+      <p>
+        © 2019 Все права защищены
+      </p>
+      <a href="#">Политика конфиденциальности</a>
+    </section>
+  </footer>
+  
+</body>
+</html>
